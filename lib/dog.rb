@@ -1,3 +1,4 @@
+require 'pry'
 class Dog 
 
   attr_reader :name 
@@ -16,6 +17,7 @@ class Dog
   def self.print_all
     @@all.each do |dog|
       puts dog
+      binding.pry
     end
   end
 end
