@@ -1,7 +1,8 @@
 require 'pry'
 class Dog 
 
-  attr_reader :name, :save
+  attr_reader :name
+  attr_accessor :save
   
   @@all = []
   
