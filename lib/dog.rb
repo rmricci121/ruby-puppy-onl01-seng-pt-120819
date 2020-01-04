@@ -2,13 +2,13 @@ require 'pry'
 class Dog 
 
   attr_reader :name
-  attr_writer :save
+  
   
   @@all = []
   
   def initialize(name) 
     @name = name
-    @save
+    self.save
   end
   
   def self.all
@@ -21,7 +21,7 @@ class Dog
     end
   end
   
-  def save
+  def self.save
     @@all << self
   end
 end
